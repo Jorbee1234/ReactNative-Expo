@@ -171,7 +171,7 @@ export default function Index() {
         onBackdropPress={() => toggleModal()}
         style={styles.modal}
         propagateSwipe={true}
-        // Removi swipeDirection e onSwipeComplete para evitar conflito
+
       >
         <View
           style={[
@@ -179,7 +179,6 @@ export default function Index() {
             { backgroundColor: darkMode ? "#2c2c2c" : "#FFFFFF" },
           ]}
         >
-          {/* Botão de fechar no topo */}
           <View style={styles.modalHeader}>
             <Pressable
               onPress={() => toggleModal()}
@@ -289,11 +288,11 @@ export const styles = StyleSheet.create({
 
   modal: {
     justifyContent: "flex-end",
-    margin: 0, // Preenche a tela inteira, sem margens externas
+    margin: 0, 
   },
 
   modalContent: {
-    height: screenHeight * 0.85, // aumenta para 85% para melhor uso em dispositivos altos
+    height: screenHeight * 0.85, 
     backgroundColor: "#FFFFFF",
     borderTopLeftRadius: 28,
     borderTopRightRadius: 28,
@@ -301,13 +300,11 @@ export const styles = StyleSheet.create({
     paddingTop: 20,
     paddingBottom: 30,
 
-    // Sombra iOS
     shadowColor: "#000",
     shadowOffset: { width: 0, height: -4 },
     shadowOpacity: 0.1,
     shadowRadius: 10,
 
-    // Sombra Android
     elevation: 12,
   },
 
