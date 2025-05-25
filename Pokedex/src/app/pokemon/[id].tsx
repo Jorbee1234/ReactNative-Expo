@@ -73,7 +73,7 @@ export default function Pokemon({ name, darkMode }: Props) {
   return (
     <ScrollView
       style={styles.container}
-      contentContainerStyle={{ paddingBottom: 20 }} // opcional para espaçamento
+      contentContainerStyle={{ paddingBottom: 20 }}
     >
       <View style={styles.header}>
         <Image
